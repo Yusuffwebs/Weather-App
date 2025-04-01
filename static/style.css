@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Ensure background image is correct */
+    background-size: cover; /* Ensures the image fully covers the page */
+    background-position: center; /* Ensures the image is centered */
+    background-color: #e5e5e5;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3); /* Light black background with opacity */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.1em;
+    color: white; /* Change text color to white */
+}
+
+h1 {
+    color: white; /* Change h1 text color to white */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: white; /* Change input text color to white */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for input with opacity */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    width: 85%;
+    padding: 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-info {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.1em;
+    color: white; /* Change weather info text color to white */
+}
+
+.weather-info .temp {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.weather-info .description {
+    font-size: 1.2em;
+    color: #ddd; /* Light gray description text */
+    margin-top: 10px;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 30px;
+    }
+
+    input[type="text"], button {
+        width: 90%;
+    }
+}
